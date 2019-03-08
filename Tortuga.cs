@@ -37,11 +37,14 @@ namespace Carrera_Liebre_y_Tortuga
             }
             return 0;
         }
-
+        /*
           public override string ToString()
         {
             return numeroCorredor.ToString() + "Esta en" + _Posicion.ToString();
         }
+        Si te fijas, tienes el mismo codigo aqui que en liebre y las dos son clases que heredan de la misma, entonces
+        la que debería tener escrito este método es la clase padre y en automatico se hereda a las otras dos
+        */
 
     }
 }
