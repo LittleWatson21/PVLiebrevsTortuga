@@ -10,7 +10,8 @@ namespace Carrera_Liebre_y_Tortuga
     {
         public Liebre(int numero) : base(numero)
         {
-            this._Posicion = 0;
+            //this._Posicion = 0; 
+            //No se requiere inicializar porque el constructor de la clase padre, se hace cargo de ponerlo en 0
         }
 
         new public int avance()
@@ -19,10 +20,10 @@ namespace Carrera_Liebre_y_Tortuga
 
             //En esta variable se asigna el número random
             //Con lo cual le diremos como avanzará
-            if (x <= 4)
-            {
-                _Posicion += 0;
-            }
+            if (x <= 4); //esta bien, otra forma de hacerlo es poner ";" dado que no hará nada y entonces no se ocupa lo demas 
+            //{
+            //    _Posicion += 0;
+            //}
             else if (x <= 9)
             {
                 _Posicion += 12;
@@ -42,10 +43,12 @@ namespace Carrera_Liebre_y_Tortuga
             return 0;
 
         }
-         public override string ToString()
+        /* public override string ToString()
         {
             return numeroCorredor.ToString() + "Esta en" + _Posicion.ToString();
         }
-
+        A menos que agregues información exclusiva de la clase debería ir aqui, pero esta información la tienes en corredor
+        entonces alla deberías poner este método
+        */
     }
 }
